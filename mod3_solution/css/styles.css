@@ -1,0 +1,126 @@
+body {
+  font-size: 16px;
+  color: #fff; 
+  background-color: #740D8C;
+  font-family: 'Raleway', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #D4B6F7;
+  border-radius: 0;
+  border: 0; 
+}
+
+
+
+.navbar-brand {
+  padding-top: 25px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand h1 { /* name */
+  font-family: 'Lora', serif;
+  color: purple;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: .75;
+}
+.navbar-collapse{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin:0px;
+}
+#nav-list a {
+  color: #951C49;
+  background-color: violet;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+div.bgc {
+  background-color: maroon;
+  padding: 10px;
+  /*margin: 40px;*/
+}
+
+.title {
+  width: 100%;
+  text-transform: uppercase;
+  color: yellow;
+  margin-top: 10px;
+}
+.marg{
+  margin-bottom: 20px;
+}
+
+/* END HOME PAGE *
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* name */
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p { /* cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+
+  }
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  #tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
