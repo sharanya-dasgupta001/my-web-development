@@ -1,57 +1,46 @@
- @media (min-width: 992px) {
-   .col-lg-4{
-     float: left;
-     width: 30.6%;
-    }
-  }
-
- @media (min-width: 768px) and (max-width: 991px) {
-   .col-md-6{
-    float: left;  
-    width: 47%;
-   }
-  }
-
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-.row {
-  width: 100%;
+html {
+  font-family: "Times New Roman", Times, serif;
 }
 
-h1 {
-  margin-bottom: 15px;
-  font-weight: bolder;
-  text-align: center;
-}
-
-div#container {
+section {
+  margin: 20px;
+  border: 1px white solid;
+  width: 30%;
+  height: 250px;
+  float: left;
   position: relative;
-  top: 60px;
-  color: black;
-  font-weight: bold;
   border: 2px solid black;
+  padding: 10px;
+  padding-top: 60px;
+  color: black;
   background-color: grey;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 200px;
-  margin: 10px;
-  font-family: Helvetica;
-  
 }
 p {
-  width: 24%;
-  margin-bottom: 30px;
   text-align: center;
-  font-size: 100%;
+}
+section > span {
+  background-color: red;
+}
+span p.title {
   font-weight: bold;
-  border: 2px solid black;
-  position: relative;
-  top:0px;
-  left: 79%;
- 
+}
+span {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  position: absolute;
+  width: 35%;
+  height: 25%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+h1 {
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 #p1 {
   background-color: pink;
@@ -63,3 +52,26 @@ p {
 #p3 {
    background-color: yellow;
 }
+
+ @media (min-width: 992px) {
+   section{
+     float: left;
+     width: 29%;
+    }
+  }
+@media (min-width: 768px) and (max-width: 991px) {
+  section.noo {
+    width: 44%;
+  }
+  section.sus {
+    width: 44%;
+  }
+  section.cak {
+    width: 90%;
+  }
+}
+ @media (max-width: 767px){
+  section{
+    width: 90%;
+  }
+ }
