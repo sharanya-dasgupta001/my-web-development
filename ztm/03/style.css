@@ -1,0 +1,66 @@
+/*  General Syntax :-
+Selector {
+    Property:  value;
+}*/
+
+/* Follow top to bottom order of tags*/
+
+*{      /*symbolises all elements*/
+    text-align: right;
+}
+body{
+    background-image: url(https://media.cntraveler.com/photos/5cb63a5211a45eb1f830373c/master/w_1280%2Cc_limit/Wulingyuan-Scenic-Area-China_GettyImages-159228516.jpg);
+    background-size: auto;
+}
+h2+p{                   /*element1, element2: To apply styles for both */
+    color: #005E70;
+    text-align: center;
+    border: 7px solid rgb(122, 222, 106);   /*RGB*/
+    cursor: pointer;    /*cursor type*/
+}
+
+p{
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80%;
+    font-family: 'Finlandica', sans-serif;
+}
+li{
+    list-style: none;
+    display: inline-block;/* By default - display: block;*/
+}
+.webtext{
+    border: 2px dashed palevioletred;
+}
+.webtext:last-child{    /*:last-child : Select the last child of this element*/
+    background-color: rgba(0, 255, 0, 0.2);
+}
+.webtext:first-child{   /*:first-child : Select the first child of this element*/
+    background-color: rgba(122, 122, 255, 0.2);
+}
+.active{
+    color: red;
+}
+#div1{
+    background-color: rgba(0, 0, 255, 0.2);
+}
+#div2{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+/*
+What seletors win out in the cascade depends on: https://specificity.keegan.st/
+-Specificity
+-Importance
+-Source Order
+*/
+/* Reference:
+ https://www.w3schools.com/cssref/css_selectors.asp
+ https://css-tricks.com/almanac/
+ https://css-tricks.com/almanac/
+ For Different Hex,RGB of different colours :-
+ https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF 
+
+ */

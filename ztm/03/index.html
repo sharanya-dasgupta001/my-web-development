@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head >	<!-- Head tag not only contains the title, it also carry information regarding webpafe-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	<!-- relation attribute for relationship type attribute for media type in href css file lik should be given-->
+	<link rel="stylesheet" type="text/css" href="style2.css">	<!-- Dominates over style.css -->
+	<style>	/* Inline Style 2, Highest Specificity */
+		li{
+			/*background-color: paleturquoise;*/
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<header style="background-color: none; color: yellow;">	<!--Inline Style type 1, Highest Specificity-->
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="login.html">Login</a></li>
+	
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h2>Home</h2>
+		<p>Homegnome</p>
+		<div id="div1">	<!-- #id tag -->
+			<p class="webtext active">Lorem ipsum dolor sit amet</p>	<!--.class tag-->
+			<p class="webtext">Lorem ipsum dolor sit amet</p>
+			<p class="webtext">Lorem ipsum dolor sit amet</p>
+		</div>
+		<div id="div2">	<!-- #id tag -->
+			<p class="webtext active">Lorem ipsum dolor sit amet</p>	<!--.class tag-->
+			<p class="webtext">Lorem ipsum dolor sit amet</p>
+			<p class="webtext">Lorem ipsum dolor sit amet</p>
+		</div>	
+	</section>
+
+</body>
+</html>
+
+<!-- Need of separate CSS File :- for huge websites, including all styles inside html makes the file very bulky and very very difficult to maintain, thus separate css file is created -->

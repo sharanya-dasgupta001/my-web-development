@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+	<!--
+	⁜ If we use method="POST", the values are not appended in the url, generally used for
+	security of password, also we can use another attribute action="action.php"
+	⁜ Each input tag should have one name & type attribute
+	⁜ Radio attribute should have a value attribute to avioid "on" value in url 
+	⁜ div tag is used to divide the content in different blocks
+	⁜ span tag is similar to div but it is inline
+	⁜ semantic elements are introduced to HTML5(new) :- 
+	<article>,<aside>,<details>,<figcaption>,figure>,<footer>,<header>,<main>,<mark>,<nav>,<section>,<summary>,<time>-->
+	<!--<div>-->
+
+	<header>
+		<h1>Register</h1>
+	</header>
+	<nav>
+		<a href="www.ggoogle.com"></a>
+	</nav>
+	<form method="GET">
+		<!--<span>First Name: </span> <input type="text" name="firstname"><br>-->
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" name="password" minlength="5"><br>
+		Birthday: <input type="date" name="birthday"><br>
+		Gender:<br>
+		<input type="radio" name="Gender" value="Male">Male<br>
+		<input type="radio" name="Gender" value="Female">Female<br>
+		<input type="radio" name="Gender" value="Other">Other<br>
+		Pets:<br>
+		<input type="checkbox" name="cat">Cat<br>
+		<input type="checkbox" name="dog">Dog<br>
+		<input type="checkbox" name="parrot">Parrot<br>
+		<input type="checkbox" name="fish">Fish<br>
+		Cars:<br>
+		<select>
+		<option value="volvo" name="volvo">Volvo</option>
+		<option value="bmw" name="bmw">BMW</option>
+		<option value="audi" name="audi">Audi</option>
+		</select><br>
+		<input type="submit" value="Register">
+		<input type="reset">
+	</form>
+	<!--</div>-->
+	<footer>
+		<p>A website made with love</p>
+	</footer>
+
+</body>
+</html>
+<!--Return url:- 
+file:///C:/Users/Sharanya%20Dasgupta/OneDrive/Desktop/sdg_codes/dev/ztm/02%20Making%20a%20Form/test/register.html?firstname=Prodosh&lastname=Mitra&email=sharanyadasg%40gmail.com&password=fhfgfgfgfgfg&birthday=2022-06-01&Gender=Male&cat=on&dog=on&parrot=on&fish=on
